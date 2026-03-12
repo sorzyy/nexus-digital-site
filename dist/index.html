@@ -1,36 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nexus Digital - Agence Growth & Performance. On scale les marques ambitieuses avec des stratégies data-driven." />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta name="color-scheme" content="dark" />
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Nexus Digital - Agence Growth & Performance" />
-    <meta property="og:description" content="On scale les marques ambitieuses avec des stratégies data-driven." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sorzyy.github.io/nexus-digital-site/" />
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Nexus Digital - Agence Growth & Performance" />
-    <meta name="twitter:description" content="On scale les marques ambitieuses avec des stratégies data-driven." />
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/nexus-digital-site/favicon.svg" />
-    <link rel="apple-touch-icon" href="/nexus-digital-site/favicon.svg" />
-    
-    <!-- Preconnect -->
-    <link rel="preconnect" href="https://api.fontshare.com" />
-    <link rel="preconnect" href="https://images.unsplash.com" />
-    
-    <title>Nexus Digital - Agence Growth & Performance</title>
-    <script type="module" crossorigin src="/nexus-digital-site/assets/index-BbHerJZs.js"></script>
-    <link rel="stylesheet" crossorigin href="/nexus-digital-site/assets/index-DYYIUItV.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Digital</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #000; 
+            color: #fff; 
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero */
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 20px; }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 700; margin-bottom: 20px; }
+        .hero p { font-size: 1.25rem; color: #888; margin-bottom: 40px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .btn { display: inline-block; padding: 16px 32px; background: #fff; color: #000; text-decoration: none; border-radius: 50px; font-weight: 600; }
+        .btn-outline { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.2); margin-left: 10px; }
+        
+        /* Sections */
+        section { padding: 80px 20px; }
+        .section-title { text-align: center; margin-bottom: 60px; }
+        .section-title span { color: #8B5CF6; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 1px; }
+        .section-title h2 { font-size: 2.5rem; margin-top: 10px; }
+        
+        /* Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 32px; border-radius: 16px; }
+        .card h3 { font-size: 1.25rem; margin-bottom: 8px; }
+        .card p { color: #888; }
+        
+        /* Pricing */
+        .pricing { background: rgba(255,255,255,0.02); }
+        .price { font-size: 2.5rem; font-weight: 700; margin: 16px 0; }
+        .popular { border-color: #8B5CF6; background: rgba(139,92,246,0.1); }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #666; }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <span style="color: #8B5CF6; font-size: 0.875rem;">Agence Growth & Performance</span>
+            <h1>We Scale Brands<br>to 8 Figures</h1>
+            <p>Stratégie data-driven, créativité débordante, résultats mesurables.</p>
+            <a href="#contact" class="btn">Démarrer un projet</a>
+            <a href="#services" class="btn btn-outline">Voir nos services</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-title">
+                <span>Nos Services</span>
+                <h2>Tout pour scaler</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>SEO & Content</h3>
+                    <p>Dominez les résultats Google avec une stratégie SEO sur mesure.</p>
+                </div>
+                <div class="card">
+                    <h3>Paid Social</h3>
+                    <p>Meta Ads, TikTok, LinkedIn. On scale vos campagnes.</p>
+                </div>
+                <div class="card">
+                    <h3>Google Ads</h3>
+                    <p>Capturez l'intention d'achat au moment clé.</p>
+                </div>
+                <div class="card">
+                    <h3>Email Marketing</h3>
+                    <p>Automatisez et personnalisez vos séquences.</p>
+                </div>
+                <div class="card">
+                    <h3>Influence</h3>
+                    <p>Collaborez avec les créateurs qui convertissent.</p>
+                </div>
+                <div class="card">
+                    <h3>Analytics</h3>
+                    <p>Data-driven decisions. Pas de bullshit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <span>Tarifs</span>
+                <h2>Des prix transparents</h2>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Starter</h3>
+                    <p>Pour démarrer</p>
+                    <div class="price">1,990€</div>
+                    <p style="margin-bottom: 20px;">/mois</p>
+                    <a href="#contact" class="btn" style="width: 100%; text-align: center;">Commencer</a>
+                </div>
+                <div class="card popular">
+                    <span style="color: #8B5CF6; font-size: 0.75rem; font-weight: 600;">POPULAIRE</span>
+                    <h3>Growth</h3>
+                    <p>Le plus populaire</p>
+                    <div class="price">4,990€</div>
+                    <p style="margin-bottom: 20px;">/mois</p>
+                    <a href="#contact" class="btn" style="width: 100%; text-align: center;">Commencer</a>
+                </div>
+                <div class="card">
+                    <h3>Enterprise</h3>
+                    <p>Sur mesure</p>
+                    <div class="price">Custom</div>
+                    <p style="margin-bottom: 20px;">&nbsp;</p>
+                    <a href="#contact" class="btn btn-outline" style="width: 100%; text-align: center;">Nous contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 3rem; margin-bottom: 20px;">Ready to Scale ?</h2>
+            <p style="color: #888; margin-bottom: 40px;">Discutons de vos objectifs et voyons comment on peut vous aider.</p>
+            <a href="mailto:contact@nexusdigital.com" class="btn">Book a Call</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>NEXUS<span style="color: #8B5CF6;">DIGITAL</span></strong></p>
+        <p style="margin-top: 10px;">© 2026 Nexus Digital. Tous droits réservés.</p>
+    </footer>
+</body>
 </html>
